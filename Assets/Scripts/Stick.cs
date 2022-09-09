@@ -5,11 +5,11 @@ using UnityEngine;
 public class Stick : MonoBehaviour
 {
     [SerializeField] private Animator _animator;
-    public float _power;
+    public float AnimationPosition;
 
     private void Update()
     {
-        _power = Mathf.Clamp(_power, 0, 1);
-        _animator.SetFloat("Blend", _power);
+        AnimationPosition = Mathf.Clamp(AnimationPosition, 0, 1);
+        _animator.SetFloat("Blend", AnimationPosition);
     }
 }
