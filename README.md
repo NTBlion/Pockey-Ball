@@ -1,2 +1,2 @@
 # Pockey-Ball
-Учебный проект
+Training project
